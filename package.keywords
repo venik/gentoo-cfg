@@ -1,0 +1,6 @@
+net-wireless/iwlwifi
+dev-util/cflow
+dev-util/google-perftools
+
+sci-electronics/freehdl
+sci-electronics/ghdl

@@ -1,0 +1,29 @@
+media-video/mplayer quicktime radio real samba sse sse2 ssse3 win32codecs sdl mp2 vorbis live cdparanoia png ass -gtk
+media-plugins/audacious-plugins flac mp3 sse2 vorbis wma wavpack
+media-libs/flac ogg sse
+dev-util/git	gtk iconv prel threads tk
+www-servers/nginx -perl
+app-editors/gvim -gtk motif
+net-analyzer/nmap -gtk
+sci-visualization/gnuplot pdf svga gd
+sci-mathematics/scilab -gtk Xaw3d
+media-libs/gd png
+x11-drivers/nvidia-drivers acpi
+net-wireless/iwlwifi ipw4965
+x11-libs/cairo svg
+media-gfx/gimp png svg tiff wmf pdf exif
+dev-lang/swi-prolog doc
+mail-client/mutt imap mbox pop smtp sasl
+net-im/skype qt-static
+games-strategy/heroes3 maps music sounds nocd
+app-emulation/qemu-softmmu kqemu
+x11-libs/qt doc examples
+app-text/poppler-bindings cairo
+media-libs/freetype kpathsea
+app-text/lcdf-typetools kpathsea
+app-text/texlive cyrillic
+games-fps/quake3-bin teamarena
+app-office/lyx	dia html latex rtf
+
+net-im/pidgin -gstreamer
+net-libs/libnice -gstreamer
