@@ -1,4 +1,6 @@
-media-video/mplayer quicktime radio real samba sse sse2 ssse3 win32codecs sdl mp2 vorbis live cdparanoia png ass -gtk
+media-video/mplayer quicktime radio real samba sse sse2 ssse3 win32codecs sdl mp2 vorbis live cdparanoia png ass aac x264 -gtk
+media-video/ffmpeg x265 ssse3 threads encode x264 faac
+
 media-plugins/audacious-plugins flac mp3 sse2 vorbis wma wavpack
 media-libs/flac ogg sse
 dev-util/git	gtk iconv prel threads tk
@@ -19,11 +21,22 @@ games-strategy/heroes3 maps music sounds nocd
 app-emulation/qemu-softmmu kqemu
 x11-libs/qt doc examples
 app-text/poppler-bindings cairo
+app-text/poppler cairo
 media-libs/freetype kpathsea
 app-text/lcdf-typetools kpathsea
 app-text/texlive cyrillic
 games-fps/quake3-bin teamarena
+sys-fs/udev	extras
+
 app-office/lyx	dia html latex rtf
+app-text/evince dvi djvu tiff
 
 net-im/pidgin -gstreamer
 net-libs/libnice -gstreamer
+net-libs/xulrunner java
+www-servers/tomcat doc examples test
+
+www-client/seamonkey java -mozdevelop moznocompose moznoirc
+www-client/mozilla-firefox java -mozdevelop moznocompose moznoirc
+
+sci-mathematics/octave fftw sparse

@@ -1,6 +1,15 @@
 net-wireless/iwlwifi
+
 dev-util/cflow
 dev-util/google-perftools
+dev-util/min-cscope
+dev-util/kscope
 
 sci-electronics/freehdl
 sci-electronics/ghdl
+
+dev-util/autodia
+
+net-im/skype
+
+www-client/seamonkey
