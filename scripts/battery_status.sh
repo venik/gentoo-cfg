@@ -1,13 +1,35 @@
+# Battery status script
+# Copyright (C) 2011 Alex Nikiforov  nikiforov.pub@gmail.com
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+# I found it some time ago, but it was for old acpi in procfs
+# unforantly, but I dont remember who was the author of that script.
+# I update it for sysfs and add .bashrc. Work fine on Gentoo :]
+
+# sample of the .bashrc
+#-----------------------------------------------------------------------
+#BAT=$(/path/to/the/script/battery_status.sh)
+#export PS1="\[\033[01;32m\]\u@\h\[\033[01;34m\] $BAT \w \$\[\033[00m\] "
+#-----------------------------------------------------------------------
+
 #!/bin/bash
-#
-# battery status script
-#
+BATTERY=/sys/class/power_supply/BAT0/
 
-BATTERY=/proc/acpi/battery/BAT1
-
-REM_CAP=`grep "^remaining capacity" $BATTERY/state | awk '{ print $3 }'`
-FULL_CAP=`grep "^last full capacity" $BATTERY/info | awk '{ print $4 }'`
-BATSTATE=`grep "^charging state" $BATTERY/state | awk '{ print $3 }'`
+REM_CAP=`cat $BATTERY/energy_now`
+FULL_CAP=`cat $BATTERY/energy_full`
+BATSTATE=`cat $BATTERY/status`
 
 CHARGE=`echo $(( $REM_CAP * 100 / $FULL_CAP ))`
 
@@ -20,13 +42,13 @@ YEL='\033[01;33m'
 COLOUR="$RED"
 
 case "${BATSTATE}" in
-   'charged')
+   'Charged')
    BATSTT="$BLD=$NON"
    ;;
-   'charging')
+   'Charging')
    BATSTT="$BLD+$NON"
    ;;
-   'discharging')
+   'Discharging')
    BATSTT="$BLD-$NON"
    ;;
 esac
