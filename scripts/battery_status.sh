@@ -20,7 +20,7 @@
 #                 110-Colour-coded-battery-charge-level-and-status-
 #	          in-your-bash-prompt.html
 #
-# I update it for sysfs and add .bashrc. Work fine on Gentoo :]
+# I update it for sysfs and add .bashrc. Works fine on Gentoo :]
 
 # sample of the .bashrc
 #BAT="[ \$(/path/to/the/scripts/battery_status.sh) ]"
