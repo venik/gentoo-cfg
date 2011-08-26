@@ -1,5 +1,6 @@
 # Battery status script
-# Copyright (C) 2011 Alex Nikiforov  nikiforov.pub@gmail.com
+# Copyright (C) Basically Tech (??? dont know exactly)
+#		2011 Alex Nikiforov  nikiforov.pub@gmail.com
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -15,11 +16,14 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # I found it some time ago, but it was for old acpi in procfs
-# unforantly, but I dont remember who was the author of that script.
+# based on http://www.basicallytech.com/blog/index.php?/archives/
+#                 110-Colour-coded-battery-charge-level-and-status-
+#	          in-your-bash-prompt.html
+#
 # I update it for sysfs and add .bashrc. Work fine on Gentoo :]
 
 # sample of the .bashrc
-#BAT="[ \$(/home/nika/git/gentoo-cfg/scripts/battery_status.sh) ]"
+#BAT="[ \$(/path/to/the/scripts/battery_status.sh) ]"
 #export PS1="$BAT \[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] "
 
 #!/bin/bash
