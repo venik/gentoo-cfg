@@ -19,10 +19,8 @@
 # I update it for sysfs and add .bashrc. Work fine on Gentoo :]
 
 # sample of the .bashrc
-#-----------------------------------------------------------------------
-#BAT=$(/path/to/the/script/battery_status.sh)
-#export PS1="\[\033[01;32m\]\u@\h\[\033[01;34m\] $BAT \w \$\[\033[00m\] "
-#-----------------------------------------------------------------------
+#BAT="[ \$(/home/nika/git/gentoo-cfg/scripts/battery_status.sh) ]"
+#export PS1="$BAT \[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] "
 
 #!/bin/bash
 BATTERY=/sys/class/power_supply/BAT0/
