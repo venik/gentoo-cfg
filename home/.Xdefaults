@@ -1,0 +1,6 @@
+XTerm*background:	black
+XTerm*foreground:	white
+XTerm*saveLines:	250
+
+
+*xtDefaultFontSet: -*-fixed-medium-r-normal-*-*-120-*-*-*-*-koi8-*
