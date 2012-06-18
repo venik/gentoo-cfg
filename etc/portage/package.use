@@ -13,13 +13,14 @@ media-libs/gd png
 x11-drivers/nvidia-drivers acpi
 net-wireless/iwlwifi ipw4965
 x11-libs/cairo svg
+x11-libs/qt doc examples
+x11-libs/libdrm video_cards_nouveau video_cards_intel
 media-gfx/gimp png svg tiff wmf pdf exif
 dev-lang/swi-prolog doc
 mail-client/mutt imap mbox pop smtp sasl
 net-im/skype qt-static
 games-strategy/heroes3 maps music sounds nocd
 app-emulation/qemu-softmmu kqemu
-x11-libs/qt doc examples
 app-text/poppler-bindings cairo
 app-text/poppler cairo
 media-libs/freetype kpathsea
@@ -40,3 +41,5 @@ www-client/seamonkey java -mozdevelop moznocompose moznoirc
 www-client/mozilla-firefox java -mozdevelop moznocompose moznoirc
 
 sci-mathematics/octave fftw sparse
+
+dev-libs/libxml2	python

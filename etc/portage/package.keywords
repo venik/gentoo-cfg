@@ -13,3 +13,6 @@ dev-util/autodia
 net-im/skype
 
 www-client/seamonkey
+
+x11-drivers/xf86-video-intel
+x11-libs/libdrm

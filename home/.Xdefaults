@@ -1,6 +1,6 @@
 XTerm*background:	black
 XTerm*foreground:	white
-XTerm*saveLines:	250
+XTerm*saveLines:	1000
 
 
 *xtDefaultFontSet: -*-fixed-medium-r-normal-*-*-120-*-*-*-*-koi8-*
